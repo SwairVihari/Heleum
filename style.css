@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+ display: flex;
+ justify-content: space-between;
+ padding: 20px 150px;
+}
+
+.logoContainer{
+    display: grid;
+    place-items: center;
+}
+
+.logoContainer > img{
+    transform: scale(0.9);
+}
+
+.navitemContainer > ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.navitemContainer > ul > li {
+    margin: 20px 20px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: #072F60;
+    font-size: 1.3rem;
+}
+
+.nav_li_active{
+    color: #3BBCA7 !important;
+}
+
+.navitemContainer > ul > li:last-child {
+    background-color: #3BBCA7;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 4px;
+}
+
+/* ---------------------------------------------Search Box-------------------------------------------------------- */
+
+.searchBox__title{
+    font-family: "Montserrat";
+    font-size: 2rem;
+    color: #072F60;
+    font-weight: 700;
+    padding: 20px 150px;
+}
+
+.searchBox__box{
+    border: 2px solid rgba(0,0,0,0.1);
+    width: 70%;
+    max-width: 700px;
+    margin: 20px 150px;
+    padding: 20px 20px;
+    background-color: #FCFCFC;
+}
+
+.searchBox__box form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchBox__box .searchBox__box__select{
+    display: flex;
+    width: 80%;
+}
+
+.searchBox__box .searchBox__box__select select{
+    border: none;
+    width: 200px;
+    color: #757575;
+    font-weight: 500;
+    font-size: 1.5rem;
+    background-color: #FCFCFC;
+   
+}
+
+.horizontalLine{
+    width: 1px;
+    height: 30px;
+    background-color: rgba(0,0,0,0.1);
+    margin: 0px 25px;
+    
+}
+
+.searchBox__box button{
+    background-color: #3BBCA7;
+    color: white;
+    padding: 7px 25px;
+    border-radius: 4px;
+    border: none;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+/* Cards */
+
+.cardContainer__row{
+    padding: 20px 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    font-family: "Montserrat";
+    /* border: 0.5px solid green; */
+    width: 30%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(234, 246, 255, 0.8);
+
+}
+
+.card__img__container{
+    width: 100%;
+}
+
+.card__img__container > img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.card__content{
+    /* border: 0.5px solid red; */
+    margin: 10px;
+}
+
+.card__content__time{
+    color: #757575;
+    font-weight: 500;
+    margin: 5px 0px;
+}
+
+.card__content__subject{
+    color:#072F60;
+    font-weight: 700;
+    margin: 5px 0px;
+}
+
+.card__content__cost{
+    color:#3BBCA7;
+    font-weight: 600;
+    margin: 5px 0px;
+}
+
+.card__content__text{
+    color: #757575;
+    margin: 5px 0px;
+    font-size: 0.75rem;
+}
+
+.card__tutor{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    /* border: 0.5px solid red; */
+}
+
+.card__tutor__img__container{
+    margin-right: 20px;
+}
+
+.card__tutor__info__name{
+    color: #757575;
+    font-weight: 700;
+}
+
+.card__tutor__info__tutor{
+    font-weight: 400;
+    color: #757575;
+    font-size: 0.75rem;
+}
+
+.card__stats{
+    display: flex;
+    margin: 10px;
+    padding-bottom: 20px;
+}
+
+.card__stats__subdata > p:nth-child(1){
+    font-weight: 700;
+    color: black;
+}
+
+.card__stats__subdata > p:last-child{
+    font-weight: 400;
+    color: #757575;
+}
+
+.card__stats__line{
+    width: 1px;
+    height: 30px;
+    background-color: #757575;
+    margin: 0px 20px;
+}
+
+.card__button{
+    background-color: #3BBCA7;
+    margin-left: auto;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+
+/* Pagination */
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.pagination__box{
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgba(0,0,0,0.2);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCFCFC;
+    font-weight: 600;
+    font-family: "Montserrat";
+    color: #757575;
+    border-radius: 2px;
+
+}
+
+.pagination__box__active{
+    background-color: #3BBCA7;
+    color: white;
+    border: none;
+}
+
+.pagination__middle{
+    display: flex;
+    margin: 0px 20px;
+   
+}
+
+.Footer{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url("./Assets/wave.png");
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    padding: 20px 150px;
+    justify-content: space-between;
+    /* border: 2px solid tan; */
+}
+
+.eclipse{
+    /* border: 2px solid red; */
+    position: absolute;
+    right: 0;
+    bottom: 00px;
+    z-index: 99;
+    width: 500px;
+    height: 500px;
+}
+
+.Footer__company{
+    margin-top: 25%;
+    /* border: 2px solid red; */
+    font-family: "Montserrat";
+    color: white;
+    font-weight: 500;
+    flex: 2;
+    margin-left: 20px;
+}
+
+.Footer__company > p {
+    margin:40px 0px
+}
+
+.Footer__sitemap{
+    margin-top: 25%;
+    margin-left: 10%;
+    /* border: 2px solid red; */
+    font-family: "Montserrat";
+    color: white;
+    font-weight: 500;
+    flex:2;
+}
+
+.Footer__sitemap > p{
+    margin: 30px 0px;
+}
+
+.Footer__sitemap > p:first-child{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+
+.Footer__newslatter{
+    margin-top: 25%;
+    /* border: 2px solid red; */
+    font-family: "Montserrat";
+    color: white;
+    font-weight: 500;
+    flex:2;
+}
+
+.Footer__newslatter > p{
+    margin: 50px 0px;
+}
+
+
+.Footer__newslatter > p:first-child{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.emailbox{
+    display: flex;
+}
+
+.emailbox > input {
+    padding: 30px 30px;
+    border-radius: 55px 0px 0px 55px;
+    border: none;
+}
+
+.emailbox > input::placeholder{
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+
+
+.emailbox > button {
+    background-color: #60D6C2;
+    border: none;
+    border-radius: 0px 55px 55px 0px;
+}
+
+
+.fa-solid, .fa-brands{
+    transform: scale(1.5);
+    margin-right: 20px;
+}
+
+.fa-paper-plane{
+    color: white;
+    padding: 30px;
+}
